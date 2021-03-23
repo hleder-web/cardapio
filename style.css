@@ -133,7 +133,7 @@ header ul li {
 }
 
 header ul li:hover {
-    background: gray;
+    background: #212121;
     color: white;
 }
 
