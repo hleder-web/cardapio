@@ -93,6 +93,10 @@ video {
     margin: 0 auto
 }
 
+a {
+    text-decoration: none;
+}
+
 body {
     background-image: url(img/bg.jpeg);
     font-family: 'Heebo', sans-serif;
