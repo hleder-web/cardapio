@@ -9,11 +9,11 @@ $(document).ready(function(){
         $(".openbg").addClass("active");
         $("fechar").addClass("active");
     });
-    $("fechar").click(function(){
+    $(".openbg").click(function(){
         $("article").removeClass("active");
         $(".openbg").removeClass("active");
         $("fechar").removeClass("active");
-        let $input = $input.val()=1;
+       
     });
  
   
