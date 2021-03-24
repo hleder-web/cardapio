@@ -39,8 +39,17 @@ $(document).ready(function(){
         return false;
     });
     $('#salvar').click(function () {
-        $('.formulario').fadeToggle();
-        $(".openbg2").removeClass("active");
+        if( $("#name").val()=="" || $("#endereco").val() == ""){
+            var x = document.getElementById("snackbar");
+    x.className = "show";
+    setTimeout(function(){ x.className = x.className.replace("show", ""); }, 3000);
+        }else{
+            $('.formulario').fadeToggle();
+            $(".openbg2").removeClass("active");
+        }
+       
+    console.log($("#name").val());
+    console.log($("#endereco").val());
     });
 
 });
