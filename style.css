@@ -315,7 +315,7 @@ span {
 
 input {
     height: 34px;
-    width: 100px;
+    width: 80%;
     text-align: center;
     font-size: 26px;
     border: 1px solid #ddd;
@@ -331,7 +331,7 @@ input {
     transform: translate(-50%, -50%);
     background: #4c2d008a;
     z-index: 100;
-    width: 100%;
+    width: 85%;
     border-radius: 13px;
     max-width: 500px;
 }
@@ -351,8 +351,11 @@ input {
 .formulario ul li:nth-child(2),
 .formulario ul li:nth-child(3) {
     color: white;
-    display: block;
+    display: flex;
     margin: 0 auto;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
 }
 
 .formulario ul {
