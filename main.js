@@ -1,8 +1,11 @@
 $(document).ready(function(){
-    let i=1;
+    $(".openbg2").addClass("active");
     $("a").click(function(){
         let $input = $(this).parent().find('input');
-        this.href += $input.val();
+        let $nome = $("#name");
+        let $endereco = $("#endereco");
+        this.href += $input.val() + "%0AMeu%20nome%20é:"+ $nome.val() + "%0AMeu%20endereço%20é:" +$endereco.val();
+        
     });
     $("article").click(function(){
         $(this).addClass("active");
@@ -34,6 +37,10 @@ $(document).ready(function(){
         $input.change();
         console.log( $input.val());
         return false;
+    });
+    $('#salvar').click(function () {
+        $('.formulario').fadeToggle();
+        $(".openbg2").removeClass("active");
     });
 
 });
