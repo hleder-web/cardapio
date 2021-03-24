@@ -369,6 +369,7 @@ button#salvar {
     font-size: 27px;
     border-radius: 13px;
     line-height: 47px;
+    cursor: pointer;
 }
 
 @media (max-width: 767px) {
