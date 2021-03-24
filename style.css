@@ -378,7 +378,6 @@ button#salvar {
 #snackbar {
     visibility: hidden;
     min-width: 250px;
-    margin-left: -125px;
     background-color: #4c2d00f0;
     color: #fff;
     text-align: center;
@@ -390,6 +389,7 @@ button#salvar {
     bottom: 30px;
     font-size: 17px;
     z-index: 9999;
+    transform: translateX(-50%);
 }
 
 #snackbar.show {
